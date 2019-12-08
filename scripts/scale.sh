@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 echo "Extracting service id"
 SVC=javawebapp_code
 SID=$(docker service ls | grep -i $SVC | awk '{print $1}')

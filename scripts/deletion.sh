@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 echo "deletion of application stack"
 docker stack rm javawebapp
 echo "removing the stack completely.......wait for 2 mins for completion...........!!"

@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x 
 echo $PWD
 echo "Verifying Docker images"
 docker images | grep -i stack | awk '{print $1}'
