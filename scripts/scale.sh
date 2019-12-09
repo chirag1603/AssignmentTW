@@ -5,7 +5,7 @@ SVC=javawebapp_code
 SID=$(docker service ls | grep -i $SVC | awk '{print $1}')
 echo $SID
 echo "scaling the application stack"
-SCALE=1
+SCALE=4
 docker service scale ${SID}=$SCALE
 echo "Scaling service in progress ........will wait for 60s ........!!"
 sleep 60

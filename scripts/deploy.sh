@@ -2,6 +2,8 @@
 set -x 
 echo $PWD
 echo "Verifying Docker images"
+docker pull chirag14/static
+docker pull chirag14/code
 docker images | grep -i stack | awk '{print $1}'
 status=$?
 docker images | grep -i code | awk '{print $1}'

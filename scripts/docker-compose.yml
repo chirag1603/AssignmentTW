@@ -1,11 +1,11 @@
 version: "3.7"
 services:
   static:
-    image: static
+    image: chirag14/static
     volumes:
       - data-volume:/usr/home/static/
   code:
-    image: code
+    image: chirag14/code
     ports:
       - 8084:8080
 volumes:
