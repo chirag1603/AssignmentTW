@@ -6,6 +6,8 @@ services:
       - data-volume:/usr/home/static/
   code:
     image: chirag14/code
+    deploy:
+      replicas: 4
     ports:
       - 8084:8080
 volumes:
